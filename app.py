@@ -106,7 +106,7 @@ def top3_cause():
     for container in p.containers:
         p.bar_label(container,label_type="edge",padding=6,size=15,color="black",rotation=0,
         bbox={"boxstyle": "round", "pad": 0.4, "facecolor": "orange", "edgecolor": "#1c1c1c", "linewidth" : 2, "alpha": 1})
-    sns.despine(left=True, bottom=True)
+    plt.tick_params(top=False, bottom=False, left=False, right=False, labelleft=True, labelbottom=False)
     st.write(fig)    
 
 top3_cause()
