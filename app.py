@@ -100,8 +100,8 @@ def top3_cause():
     fig = plt.figure()
     p = sns.barplot(x=temp2["Total"],y=temp2["index"], palette=palette, saturation=1,edgecolor = "#1c1c1c", linewidth = 2)
     p.set_title("Top 3 kasus kematian di dunia tahun 2019",fontsize=25)
-    p.set_xlabel("\nTotal",fontsize=20)
-    p.set_ylabel("Cause",fontsize=20)
+    p.set_xlabel("\Jumlah",fontsize=20)
+    p.set_ylabel("Sebab",fontsize=20)
     p.set_xticklabels(p.get_xticklabels(),rotation = 90)
     for container in p.containers:
         p.bar_label(container,label_type="edge",padding=6,size=15,color="black",rotation=0,
